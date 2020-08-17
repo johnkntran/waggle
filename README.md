@@ -23,6 +23,7 @@ In the terminal, execute `docker-compose up --build --remove-orphans`.
 Once the containers are up and running, we need to create a Django superuser. Run `docker exec -ti web bash` to SSH into the running web container. Then run `python manage.py createsuperuser`, supplying your credentials in the subsequent prompts.
 
 In the your browser, navigate to [waggle.com](http://waggle.com/) (or [http://127.0.0.1:8000](http://127.0.0.1:8000/)) to see the running Wagtail website.
+You can continue with the [official Wagtail tutorial](https://docs.wagtail.io/en/stable/getting_started/tutorial.html#create-the-database) from here.
 
 To stop the containers, hit `CTRL + C` on the terminal. Then execute `docker-compose down --remove-orphans` to kill the stopped containers.
 
